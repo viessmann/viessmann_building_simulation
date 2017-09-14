@@ -2,11 +2,15 @@
 The Viessmann building simulation for Hack Zürich 2017 is written in Python3 and tested on Windows and Raspbian on Raspberry Pi 3 Model B.
 
 ## Features
-* Room heating
-* Domestic hot water heating
-* Solar energy
-* Control of room target temperature by local csv-file or Alexa over DynamoDB-Query
-* Runs as endless loop over one week of weather data
+The Viessmann building simulation is a highly simplified simulation of a house consisting of a room, a domestic hot water storage and a solar energy system (photo voltaic / solar thermal energy).
+
+Simulated processes:
+* Heating up the room by heating device
+* Cooling down the room by the difference between room and outdoor temperature
+* Heating up the water storage by heating device
+* Cooling down the water storage by the difference between room and water temperature
+* Cooling down the water storage by usage of customer (extracting warm water)
+* Producing energy by solar radiation
 
 ## Files
 | Filename | Comment |
